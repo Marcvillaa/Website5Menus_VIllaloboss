@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Marc's Perfumes</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+    .navbar { background: #333; padding: 10px; }
+    .navbar ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+    .navbar li { margin: 0 15px; }
+    .navbar a { text-decoration: none; color: white; font-weight: bold; }
+    .navbar a:hover { text-decoration: underline; }
+    section { padding: 60px 20px; text-align: center; }
+    form { margin-top: 20px; display: flex; flex-direction: column; max-width: 400px; margin-left: auto; margin-right: auto; gap: 10px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%; }
+    button { padding: 10px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #555; }
+    .success-message { margin-top: 15px; color: green; font-weight: bold; display: none; }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="Displaymenu.html">Home</a></li>
+      <li><a href="diplay.html">About Us</a></li>
+      <li><a href="Untitled-2.html">Products</a></li>
+      <li><a href="menusss.html">Gallery</a></li>
+      <li><a href="zzzzzzzzz.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Phone: 0930-426-688<br>Email: cramenujsagan134@gmail.com</p>
+
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="success-message" id="successMessage">✅ Sent!</p>
+  </section>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('successMessage');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      successMsg.style.display = 'block';
+      form.reset();
+    });
+  </script>
+  <footer>
+    <p>© 2025 Marc's Perfumes | All Rights Reserved</p>
+    <p>Follow us on 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
